@@ -1,0 +1,9 @@
+def string_times(str, n):
+  result = ""
+  for i in range(n): 
+    result = result + str
+  return result
+
+s = input()
+n = int(input())
+print(string_times(s, n))
