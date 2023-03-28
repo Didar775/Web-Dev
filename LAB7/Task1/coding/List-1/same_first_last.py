@@ -3,5 +3,5 @@ arr = list(map(int, input().split()))[:n]
 
 if(arr[0]==arr[len(arr)-1]):
     print("True")
-else
+else:
     print("False")
