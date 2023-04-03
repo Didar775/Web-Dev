@@ -47,16 +47,18 @@ def products_of_category(request,id):
 
     if id in range(1,5):
         
+        x1 = (id - 1) * 5
+        x2 = id * 5
         
         return JsonResponse(
-
-            [products_json[i-1] for i in range(id*6, )],
+        
+            [products_json[i] for i in range(x1 , x2)],
 
             safe = False
         
         )
     
-    return HttpResponse("Error: Don't have have like category")
+    return HttpResponse("Error: Don't have like category")
     
    
    
