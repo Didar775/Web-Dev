@@ -14,9 +14,10 @@ class CompanySerializer1(serializers.Serializer):
     
     id = serializers.IntegerField(read_only = True)
     name = serializers.CharField()
-    description = serializers.CharField()
+    description = serializers.CharField(req)
     city = serializers.CharField()
     address = serializers.CharField()
+    vacancies = VacancySerializer(many=True, source='vacancies')
 
 
     def create(self, validated_data):
@@ -38,6 +39,7 @@ class CompanySerializer1(serializers.Serializer):
 
 
 
+
 class VacancySerializer(serializers.ModelSerializer):
     class Meta:
         model = Vacancy
@@ -51,7 +53,10 @@ class VacancySerializer1(serializers.Serializer):
     name = serializers.CharField()
     description = serializers.CharField()
     salary = serializers.FloatField()
-    address = serializers.CharField()
+    company_id = serializers.IntegerField()
+    
+    
+   
 
 
     def create(self, validated_data):
@@ -64,7 +69,8 @@ class VacancySerializer1(serializers.Serializer):
         instance.name = validated_data.get('name', instance.name)
         instance.description = validated_data.get('description', instance.description)
         instance.salary= validated_data.get('salary', instance.salary)
-        instance.company = validated_data.get('address', instance.company)
+        instance.company_id = validated_data.get('company_id', instance.company_id)
+       
 
         instance.save()
 

@@ -54,9 +54,9 @@ class VacancyListAPIVeiw(APIView):
         serializer = VacancySerializer(vacancies, many = True)
         return Response(serializer.data)
     
-    def put(self, request):
+    def post(self, request):
         
-        serializer = VacancySerializer(data=request.data)
+        serializer = VacancySerializer1(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)

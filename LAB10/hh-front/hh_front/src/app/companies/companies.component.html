@@ -1,0 +1,16 @@
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png" alt="HeadHunter_logo">
+    <span>Companies</span>
+  </header>
+  <main>
+    <div *ngFor="let company of companies">
+      <div class = "company_info">
+    
+       <h2> <a [routerLink]="['/companies',company.id]">{{company.name}}</a></h2>
+        <h5>City:{{company.city}}</h5>
+        <h5>Address:{{company.address}}</h5>
+        
+      </div>
+    </div>
+  </main>
+  

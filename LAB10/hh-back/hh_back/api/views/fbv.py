@@ -72,13 +72,13 @@ def vacancies(request):
     if request.method == "GET":
          
          vacancies_list = Vacancy.objects.all()
-         serialization = VacancySerializer1(vacancies_list, many = True)
-         return Response(serialization)
+         serialization = VacancySerializer(vacancies_list, many = True)
+         return Response(serialization.data)
     
     if request.method == "POST":
          
          serialization = VacancySerializer1(data=request.data)
-         if serialization.is_valid:
+         if serialization.is_valid():
               serialization.save()
               return Response(serialization.data)
          
@@ -101,7 +101,7 @@ def vacancy_by_id(request, vacancy_id):
          return Response(serialization.data)
     
     elif request.method == "PUT":
-            serialization = CompanySerializer1(instance = vacancy, data=request.data)
+            serialization = VacancySerializer1(instance = vacancy, data=request.data)
             if serialization.is_valid():
                  serialization.save()
                  return Response(serialization.data)
