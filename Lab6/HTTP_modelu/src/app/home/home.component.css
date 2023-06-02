@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  background: rgb(242, 209, 172);
+  box-sizing: border-box;
+}
+
+.main-img{
+  width: 100%;
+}
+
+.middle-part{
+  display: flex;
+}
+
+
+.main-text{
+  margin-top: 8rem;
+  margin-left: 10rem;
+  width: 550px;
+}
+
+.main-text h1{
+  margin-bottom: 5rem;
+  font-size: 5rem;
+}
+
+.main-text p{
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.main-img img{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  width: 900px;
+}

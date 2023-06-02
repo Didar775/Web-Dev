@@ -1,0 +1,114 @@
+body{
+    background-color: #edeff1;
+}
+
+h1{
+    color:rgb(12, 128, 230);
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 1px;
+}
+
+#text1{
+    color: #000;
+    font-family: sans-serif;
+    position:relative;
+    position: relative;
+    bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 1.8em;
+}
+
+#maintext{
+    margin-left: 270px;
+    margin-top: 200px;
+}
+
+.singIcon{
+    width: 400px;
+    height:370px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 870px;
+    bottom: 200px;
+}
+
+.singIcon input{
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: beige;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+#enter{
+    width: 365px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #0088ff;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#enter:hover{
+    background-color: #0f68f7;
+}
+
+.singIcon a{
+    text-decoration: none;
+    color:dodgerblue;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-bottom:1px solid;
+    border-color: rgb(160, 155, 155);
+}
+
+.singIcon button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: rgb(7, 174, 24);
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 55px;
+}
+
+.singIcon button:hover{
+    background-color: forestgreen;
+}
+
+.singIcon p{
+    padding-top: 30px;
+}
+
+.endText{
+    margin-top: 330px;
+    background-color: white;
+    padding-left: 200px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+   
+}
+
+.endText p{
+    color: #676565;
+}
+
+#lang{
+    padding-bottom: 8px;
+    border-bottom: 1px solid ;
+    border-color: #a7a5a5;
+}

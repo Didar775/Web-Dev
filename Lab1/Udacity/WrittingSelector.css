@@ -1,0 +1,15 @@
+#menu {
+    text-align: center;
+  }
+
+  .item {
+    color: red;
+  }
+
+  .picture {
+    border-radius: 5px;
+  }
+
+  .description {
+    font-style: italic;
+  }

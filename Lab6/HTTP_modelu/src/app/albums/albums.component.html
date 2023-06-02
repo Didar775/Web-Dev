@@ -1,0 +1,19 @@
+
+
+<div id="main">
+  <div class="create">
+    Album id:<input type="number" placeholder="Album id" [(ngModel)]="albumId">
+    Album user id:<input type="number" placeholder="User id"[(ngModel)]="albumUserId">
+    Album title:<input type="text" placeholder="Title id"[(ngModel)]="albumTitle">
+    <button (click)="addAlbum()">add</button>
+  </div>
+    <div class="items" *ngFor="let item of albums">
+      <div class="items2">
+        <a [routerLink]="['/albums', item.id]">
+          <p>id=<span>{{item.id}}</span></p>
+          <p>userId=<span>{{item.userId}}</span></p>
+        </a>
+        <button (click)="deleteAlbume(item.id)">delete</button>
+      </div>
+  </div>
+</div>

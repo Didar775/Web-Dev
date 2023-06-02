@@ -1,0 +1,25 @@
+body {
+    font-family: Arial; 
+}
+#to-do-list {
+    width: 400px;
+    background: #2e3d49;
+    padding: 10px 20px;
+}
+.title {
+    color: #fff;
+}
+.underline {
+    text-decoration: underline;
+} 
+.list {
+    list-style-type: circle;
+    text-align: left;
+    font-size: 16px;
+    color: #1fba58;
+    line-height: 24px;
+}
+.finished {
+    color: #f4442f;
+    text-decoration: line-through;
+}

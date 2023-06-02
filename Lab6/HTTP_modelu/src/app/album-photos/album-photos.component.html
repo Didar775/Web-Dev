@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="middle">
+    <div class="back">
+      <a [routerLink]="['/albums', id]">Return back</a>
+    </div>
+    <div class="items" *ngFor="let item of albumPhotos">
+
+      <div class="textmain">
+        <h3>Album id = <span>{{item.id}}</span></h3>
+        <h3>Id = <span>{{item.albumId}}</span></h3>
+        <h3 id="title">Title = <span>{{item.title}}</span></h3>
+      </div>
+      <div class="imgs">
+        <img id="url" src="{{item.url}}" alt="url"><br>
+        <img  id="thum" src="{{item.thumbnailUrl}}" alt="thum">
+      </div>
+    </div>
+  </div>
+</div>

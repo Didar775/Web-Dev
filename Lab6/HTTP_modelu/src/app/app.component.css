@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html{
+  font-size: 14px;
+}
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.main{
+  max-width: 1600px;
+}
+
+.top-bar{
+  background-color: rgb(120, 120, 120);
+}
+
+.top-bar ul{
+  font-size: 1.8rem;
+  padding: 2.8rem;
+  display: flex;
+  width: 100%;
+  height: 2rem;
+  justify-content: space-between;
+align-items: center;
+}
+
+.top-bar a{
+  color: rgb(255, 255, 255);
+}
+.top-bar a:hover{
+  color: black;
+  background: white;
+  border-radius: 10px;
+}

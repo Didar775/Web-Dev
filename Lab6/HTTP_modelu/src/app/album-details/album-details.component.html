@@ -1,0 +1,27 @@
+<div class="main">
+  <div class="information">
+    <a [routerLink]="[routingPath, 'photos']">Photes this albume</a>
+    <h1>
+      Album id <span>{{ album.id }}</span>
+    </h1>
+    <h1>
+      User id <span>{{ album.userId }}</span>
+    </h1>
+    <h2>
+      Album title is <span>{{ albumTitle }}</span>
+    </h2>
+
+    <div class="edit">
+      <label>Edit title:</label>
+      <input
+        id="updateText"
+        type="text"
+        placeholder="Enter your text"
+        [(ngModel)]="albumTitle"
+      />
+      <button (click)="updateTitle(album.id)">save</button>
+    </div>
+
+    <a (click)="back()" routerLink="albums">Return back</a>
+  </div>
+</div>

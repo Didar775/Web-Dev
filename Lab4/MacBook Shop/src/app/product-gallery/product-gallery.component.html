@@ -1,0 +1,10 @@
+<h2>Product gallery</h2>
+
+<div *ngIf="product">
+  <h4>{{ product.name }}</h4>
+  <h4>{{ product.price | currency }}</h4>
+  <h4>{{ product.description }}</h4>
+  <img src="{{product.image.s}}" alt="" class="image">
+  <img src="{{product.image.th}}" alt="" class="image">
+  <img src="{{product.image.ft}}" alt="" class="image">
+</div>

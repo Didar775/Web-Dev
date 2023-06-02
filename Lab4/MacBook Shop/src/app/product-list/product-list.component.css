@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding: 0;
+    
+}
+
+.product-link{
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #0c1a2b;
+}
+
+h3 {
+    font-size: 20px;
+    color: #0c1a2b;
+}
+
+
+.image-of-product {
+    margin: 20px 0;
+}
+
+.image{
+    width: 45%;
+    height: 45%;
+}
+
+
+
+button {
+    margin: 20px 0;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+
+}
+
+
+.line {
+    background-color: #b3abab;
+    width: 350px;
+    height: 1px;
+}
+

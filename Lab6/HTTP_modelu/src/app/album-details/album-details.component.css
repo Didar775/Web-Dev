@@ -1,0 +1,59 @@
+.main{
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.information{
+  align-items: center;
+  line-height: 60px;
+}
+
+span{
+  color: rgb(34, 255, 18);
+}
+
+.edit{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.edit input{
+  width: 250px;
+  height: 24px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  position: relative;
+  bottom: 5px;
+  font-size: 16px;
+}
+
+edit input:focus{
+  outline: none;
+  border: none;
+}
+
+.edit label{
+  margin-right: 10px;
+  font-size: 20px;
+}
+.edit button{
+  height: 29px;
+  margin-left: 10px;
+}
+
+.information a{
+  text-decoration: none;
+  color: rgb(24, 177, 248);
+  font-size: 24px;
+}
+
+.information a:hover{
+  background:rgb(120, 120, 120);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
